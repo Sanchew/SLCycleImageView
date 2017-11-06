@@ -7,7 +7,7 @@ s.summary      = "图片轮播"
 
 s.homepage     = "https://github.com/Sanchew/SLCycleImageView"
 
-s.license      = "MIT"
+s.license      = { :type => "MIT", :file => "LICENSE" }
 
 s.author       = { "sanchew" => "sanchew@mail.com" }
 
@@ -22,7 +22,9 @@ s.source_files  = "SLCycleImageView/Lib/SLCycleImageView/**/*.swift"
 
 s.requires_arc = true
 
-s.dependency 'SDWebImage', '~> 4.2'
+s.dependency 'Kingfisher', '~> 4.2'
 s.dependency 'DACircularProgress', '~> 2.3'
+
+s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
 end
