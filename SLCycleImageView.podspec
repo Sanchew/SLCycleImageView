@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 
-s.name         = "OOCycleImageView"
+s.name         = "SLCycleImageView"
 s.version      = "1.0.0"
 s.summary      = "图片轮播"
 
