@@ -1,0 +1,6 @@
+framework module Pods_SLCycleImageView {
+  umbrella header "Pods-SLCycleImageView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F237EE9A83D1D42DC5F76E9 /* Pods_SLCycleImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B879EB33DE1FE97B9BD089DC /* Pods_SLCycleImageView.framework */; };
+		DA1DF29D1FB0121500FA9122 /* SLAbstractDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2951FB0121500FA9122 /* SLAbstractDotView.swift */; };
+		DA1DF29E1FB0121500FA9122 /* SLAnimatedDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2961FB0121500FA9122 /* SLAnimatedDotView.swift */; };
+		DA1DF29F1FB0121500FA9122 /* SLDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2971FB0121500FA9122 /* SLDotView.swift */; };
+		DA1DF2A01FB0121500FA9122 /* SLPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2981FB0121500FA9122 /* SLPageControl.swift */; };
+		DA1DF2A11FB0121500FA9122 /* SLTextPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2991FB0121500FA9122 /* SLTextPageControl.swift */; };
+		DA1DF2A21FB0121500FA9122 /* SLCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF29A1FB0121500FA9122 /* SLCollectionViewCell.swift */; };
+		DA1DF2A31FB0121500FA9122 /* SLCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF29B1FB0121500FA9122 /* SLCycleScrollView.swift */; };
+		DA1DF2A41FB0121500FA9122 /* UIView+SLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF29C1FB0121500FA9122 /* UIView+SLExtension.swift */; };
 		DADA4D661FAAB29300014539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA4D651FAAB29300014539 /* AppDelegate.swift */; };
 		DADA4D681FAAB29300014539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA4D671FAAB29300014539 /* ViewController.swift */; };
 		DADA4D6B1FAAB29300014539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADA4D691FAAB29300014539 /* Main.storyboard */; };
@@ -15,6 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64DAFF00CF8BE4E0D0F7B734 /* Pods-SLCycleImageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLCycleImageView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SLCycleImageView/Pods-SLCycleImageView.debug.xcconfig"; sourceTree = "<group>"; };
+		B879EB33DE1FE97B9BD089DC /* Pods_SLCycleImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SLCycleImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1DF2951FB0121500FA9122 /* SLAbstractDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLAbstractDotView.swift; sourceTree = "<group>"; };
+		DA1DF2961FB0121500FA9122 /* SLAnimatedDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLAnimatedDotView.swift; sourceTree = "<group>"; };
+		DA1DF2971FB0121500FA9122 /* SLDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLDotView.swift; sourceTree = "<group>"; };
+		DA1DF2981FB0121500FA9122 /* SLPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLPageControl.swift; sourceTree = "<group>"; };
+		DA1DF2991FB0121500FA9122 /* SLTextPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLTextPageControl.swift; sourceTree = "<group>"; };
+		DA1DF29A1FB0121500FA9122 /* SLCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLCollectionViewCell.swift; sourceTree = "<group>"; };
+		DA1DF29B1FB0121500FA9122 /* SLCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLCycleScrollView.swift; sourceTree = "<group>"; };
+		DA1DF29C1FB0121500FA9122 /* UIView+SLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SLExtension.swift"; sourceTree = "<group>"; };
 		DADA4D621FAAB29300014539 /* SLCycleImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLCycleImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADA4D651FAAB29300014539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DADA4D671FAAB29300014539 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +41,7 @@
 		DADA4D6C1FAAB29300014539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DADA4D6F1FAAB29300014539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DADA4D711FAAB29300014539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B6C2CF2FD9F417A790877C /* Pods-SLCycleImageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLCycleImageView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SLCycleImageView/Pods-SLCycleImageView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F237EE9A83D1D42DC5F76E9 /* Pods_SLCycleImageView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		024ADCBEB338535AE82F91D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64DAFF00CF8BE4E0D0F7B734 /* Pods-SLCycleImageView.debug.xcconfig */,
+				F2B6C2CF2FD9F417A790877C /* Pods-SLCycleImageView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D00FB8447298264F27AFD34C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B879EB33DE1FE97B9BD089DC /* Pods_SLCycleImageView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA1DF2921FB0121500FA9122 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DF2931FB0121500FA9122 /* SLCycleScrollView */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		DA1DF2931FB0121500FA9122 /* SLCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DF2941FB0121500FA9122 /* PageControl */,
+				DA1DF29A1FB0121500FA9122 /* SLCollectionViewCell.swift */,
+				DA1DF29B1FB0121500FA9122 /* SLCycleScrollView.swift */,
+				DA1DF29C1FB0121500FA9122 /* UIView+SLExtension.swift */,
+			);
+			path = SLCycleScrollView;
+			sourceTree = "<group>";
+		};
+		DA1DF2941FB0121500FA9122 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DF2951FB0121500FA9122 /* SLAbstractDotView.swift */,
+				DA1DF2961FB0121500FA9122 /* SLAnimatedDotView.swift */,
+				DA1DF2971FB0121500FA9122 /* SLDotView.swift */,
+				DA1DF2981FB0121500FA9122 /* SLPageControl.swift */,
+				DA1DF2991FB0121500FA9122 /* SLTextPageControl.swift */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
 		DADA4D591FAAB29300014539 = {
 			isa = PBXGroup;
 			children = (
 				DADA4D641FAAB29300014539 /* SLCycleImageView */,
 				DADA4D631FAAB29300014539 /* Products */,
+				024ADCBEB338535AE82F91D3 /* Pods */,
+				D00FB8447298264F27AFD34C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +125,7 @@
 		DADA4D641FAAB29300014539 /* SLCycleImageView */ = {
 			isa = PBXGroup;
 			children = (
+				DA1DF2921FB0121500FA9122 /* Lib */,
 				DADA4D651FAAB29300014539 /* AppDelegate.swift */,
 				DADA4D671FAAB29300014539 /* ViewController.swift */,
 				DADA4D691FAAB29300014539 /* Main.storyboard */,
@@ -71,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DADA4D741FAAB29300014539 /* Build configuration list for PBXNativeTarget "SLCycleImageView" */;
 			buildPhases = (
+				056FA405F30C176D928C7B48 /* [CP] Check Pods Manifest.lock */,
 				DADA4D5E1FAAB29300014539 /* Sources */,
 				DADA4D5F1FAAB29300014539 /* Frameworks */,
 				DADA4D601FAAB29300014539 /* Resources */,
+				7DBB0A3DA2D6844177D8D433 /* [CP] Embed Pods Frameworks */,
+				BF9994B869DC18CF23AD9140 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +206,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		056FA405F30C176D928C7B48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SLCycleImageView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DBB0A3DA2D6844177D8D433 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SLCycleImageView/Pods-SLCycleImageView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLCycleImageView/Pods-SLCycleImageView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF9994B869DC18CF23AD9140 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLCycleImageView/Pods-SLCycleImageView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DADA4D5E1FAAB29300014539 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1DF29D1FB0121500FA9122 /* SLAbstractDotView.swift in Sources */,
 				DADA4D681FAAB29300014539 /* ViewController.swift in Sources */,
+				DA1DF29E1FB0121500FA9122 /* SLAnimatedDotView.swift in Sources */,
+				DA1DF2A41FB0121500FA9122 /* UIView+SLExtension.swift in Sources */,
+				DA1DF2A31FB0121500FA9122 /* SLCycleScrollView.swift in Sources */,
+				DA1DF2A21FB0121500FA9122 /* SLCollectionViewCell.swift in Sources */,
 				DADA4D661FAAB29300014539 /* AppDelegate.swift in Sources */,
+				DA1DF29F1FB0121500FA9122 /* SLDotView.swift in Sources */,
+				DA1DF2A01FB0121500FA9122 /* SLPageControl.swift in Sources */,
+				DA1DF2A11FB0121500FA9122 /* SLTextPageControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +411,7 @@
 		};
 		DADA4D751FAAB29300014539 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64DAFF00CF8BE4E0D0F7B734 /* Pods-SLCycleImageView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +427,7 @@
 		};
 		DADA4D761FAAB29300014539 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2B6C2CF2FD9F417A790877C /* Pods-SLCycleImageView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
