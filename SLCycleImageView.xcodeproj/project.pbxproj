@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0F237EE9A83D1D42DC5F76E9 /* Pods_SLCycleImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B879EB33DE1FE97B9BD089DC /* Pods_SLCycleImageView.framework */; };
-		DA1DF29D1FB0121500FA9122 /* SLAbstractDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2951FB0121500FA9122 /* SLAbstractDotView.swift */; };
-		DA1DF29E1FB0121500FA9122 /* SLAnimatedDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2961FB0121500FA9122 /* SLAnimatedDotView.swift */; };
-		DA1DF29F1FB0121500FA9122 /* SLDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2971FB0121500FA9122 /* SLDotView.swift */; };
-		DA1DF2A01FB0121500FA9122 /* SLPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2981FB0121500FA9122 /* SLPageControl.swift */; };
-		DA1DF2A11FB0121500FA9122 /* SLTextPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2991FB0121500FA9122 /* SLTextPageControl.swift */; };
-		DA1DF2A21FB0121500FA9122 /* SLCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF29A1FB0121500FA9122 /* SLCollectionViewCell.swift */; };
-		DA1DF2A31FB0121500FA9122 /* SLCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF29B1FB0121500FA9122 /* SLCycleScrollView.swift */; };
-		DA1DF2A41FB0121500FA9122 /* UIView+SLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF29C1FB0121500FA9122 /* UIView+SLExtension.swift */; };
+		DA1DF2AF1FB0366C00FA9122 /* SLAbstractDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2A71FB0366C00FA9122 /* SLAbstractDotView.swift */; };
+		DA1DF2B01FB0366C00FA9122 /* SLAnimatedDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2A81FB0366C00FA9122 /* SLAnimatedDotView.swift */; };
+		DA1DF2B11FB0366C00FA9122 /* SLDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2A91FB0366C00FA9122 /* SLDotView.swift */; };
+		DA1DF2B21FB0366C00FA9122 /* SLPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2AA1FB0366C00FA9122 /* SLPageControl.swift */; };
+		DA1DF2B31FB0366C00FA9122 /* SLTextPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2AB1FB0366C00FA9122 /* SLTextPageControl.swift */; };
+		DA1DF2B41FB0366C00FA9122 /* SLCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2AC1FB0366C00FA9122 /* SLCollectionViewCell.swift */; };
+		DA1DF2B51FB0366C00FA9122 /* SLCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2AD1FB0366C00FA9122 /* SLCycleScrollView.swift */; };
+		DA1DF2B61FB0366C00FA9122 /* UIView+SLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2AE1FB0366C00FA9122 /* UIView+SLExtension.swift */; };
 		DADA4D661FAAB29300014539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA4D651FAAB29300014539 /* AppDelegate.swift */; };
 		DADA4D681FAAB29300014539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA4D671FAAB29300014539 /* ViewController.swift */; };
 		DADA4D6B1FAAB29300014539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADA4D691FAAB29300014539 /* Main.storyboard */; };
@@ -26,14 +26,14 @@
 /* Begin PBXFileReference section */
 		64DAFF00CF8BE4E0D0F7B734 /* Pods-SLCycleImageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLCycleImageView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SLCycleImageView/Pods-SLCycleImageView.debug.xcconfig"; sourceTree = "<group>"; };
 		B879EB33DE1FE97B9BD089DC /* Pods_SLCycleImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SLCycleImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA1DF2951FB0121500FA9122 /* SLAbstractDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLAbstractDotView.swift; sourceTree = "<group>"; };
-		DA1DF2961FB0121500FA9122 /* SLAnimatedDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLAnimatedDotView.swift; sourceTree = "<group>"; };
-		DA1DF2971FB0121500FA9122 /* SLDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLDotView.swift; sourceTree = "<group>"; };
-		DA1DF2981FB0121500FA9122 /* SLPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLPageControl.swift; sourceTree = "<group>"; };
-		DA1DF2991FB0121500FA9122 /* SLTextPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLTextPageControl.swift; sourceTree = "<group>"; };
-		DA1DF29A1FB0121500FA9122 /* SLCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLCollectionViewCell.swift; sourceTree = "<group>"; };
-		DA1DF29B1FB0121500FA9122 /* SLCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLCycleScrollView.swift; sourceTree = "<group>"; };
-		DA1DF29C1FB0121500FA9122 /* UIView+SLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SLExtension.swift"; sourceTree = "<group>"; };
+		DA1DF2A71FB0366C00FA9122 /* SLAbstractDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLAbstractDotView.swift; sourceTree = "<group>"; };
+		DA1DF2A81FB0366C00FA9122 /* SLAnimatedDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLAnimatedDotView.swift; sourceTree = "<group>"; };
+		DA1DF2A91FB0366C00FA9122 /* SLDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLDotView.swift; sourceTree = "<group>"; };
+		DA1DF2AA1FB0366C00FA9122 /* SLPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLPageControl.swift; sourceTree = "<group>"; };
+		DA1DF2AB1FB0366C00FA9122 /* SLTextPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLTextPageControl.swift; sourceTree = "<group>"; };
+		DA1DF2AC1FB0366C00FA9122 /* SLCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLCollectionViewCell.swift; sourceTree = "<group>"; };
+		DA1DF2AD1FB0366C00FA9122 /* SLCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLCycleScrollView.swift; sourceTree = "<group>"; };
+		DA1DF2AE1FB0366C00FA9122 /* UIView+SLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SLExtension.swift"; sourceTree = "<group>"; };
 		DADA4D621FAAB29300014539 /* SLCycleImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLCycleImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADA4D651FAAB29300014539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DADA4D671FAAB29300014539 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,30 +76,30 @@
 		DA1DF2921FB0121500FA9122 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				DA1DF2931FB0121500FA9122 /* SLCycleScrollView */,
+				DA1DF2A51FB0366C00FA9122 /* SLCycleImageView */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
 		};
-		DA1DF2931FB0121500FA9122 /* SLCycleScrollView */ = {
+		DA1DF2A51FB0366C00FA9122 /* SLCycleImageView */ = {
 			isa = PBXGroup;
 			children = (
-				DA1DF2941FB0121500FA9122 /* PageControl */,
-				DA1DF29A1FB0121500FA9122 /* SLCollectionViewCell.swift */,
-				DA1DF29B1FB0121500FA9122 /* SLCycleScrollView.swift */,
-				DA1DF29C1FB0121500FA9122 /* UIView+SLExtension.swift */,
+				DA1DF2A61FB0366C00FA9122 /* PageControl */,
+				DA1DF2AC1FB0366C00FA9122 /* SLCollectionViewCell.swift */,
+				DA1DF2AD1FB0366C00FA9122 /* SLCycleScrollView.swift */,
+				DA1DF2AE1FB0366C00FA9122 /* UIView+SLExtension.swift */,
 			);
-			path = SLCycleScrollView;
+			path = SLCycleImageView;
 			sourceTree = "<group>";
 		};
-		DA1DF2941FB0121500FA9122 /* PageControl */ = {
+		DA1DF2A61FB0366C00FA9122 /* PageControl */ = {
 			isa = PBXGroup;
 			children = (
-				DA1DF2951FB0121500FA9122 /* SLAbstractDotView.swift */,
-				DA1DF2961FB0121500FA9122 /* SLAnimatedDotView.swift */,
-				DA1DF2971FB0121500FA9122 /* SLDotView.swift */,
-				DA1DF2981FB0121500FA9122 /* SLPageControl.swift */,
-				DA1DF2991FB0121500FA9122 /* SLTextPageControl.swift */,
+				DA1DF2A71FB0366C00FA9122 /* SLAbstractDotView.swift */,
+				DA1DF2A81FB0366C00FA9122 /* SLAnimatedDotView.swift */,
+				DA1DF2A91FB0366C00FA9122 /* SLDotView.swift */,
+				DA1DF2AA1FB0366C00FA9122 /* SLPageControl.swift */,
+				DA1DF2AB1FB0366C00FA9122 /* SLTextPageControl.swift */,
 			);
 			path = PageControl;
 			sourceTree = "<group>";
@@ -267,16 +267,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA1DF29D1FB0121500FA9122 /* SLAbstractDotView.swift in Sources */,
+				DA1DF2AF1FB0366C00FA9122 /* SLAbstractDotView.swift in Sources */,
 				DADA4D681FAAB29300014539 /* ViewController.swift in Sources */,
-				DA1DF29E1FB0121500FA9122 /* SLAnimatedDotView.swift in Sources */,
-				DA1DF2A41FB0121500FA9122 /* UIView+SLExtension.swift in Sources */,
-				DA1DF2A31FB0121500FA9122 /* SLCycleScrollView.swift in Sources */,
-				DA1DF2A21FB0121500FA9122 /* SLCollectionViewCell.swift in Sources */,
+				DA1DF2B01FB0366C00FA9122 /* SLAnimatedDotView.swift in Sources */,
+				DA1DF2B61FB0366C00FA9122 /* UIView+SLExtension.swift in Sources */,
+				DA1DF2B51FB0366C00FA9122 /* SLCycleScrollView.swift in Sources */,
+				DA1DF2B41FB0366C00FA9122 /* SLCollectionViewCell.swift in Sources */,
 				DADA4D661FAAB29300014539 /* AppDelegate.swift in Sources */,
-				DA1DF29F1FB0121500FA9122 /* SLDotView.swift in Sources */,
-				DA1DF2A01FB0121500FA9122 /* SLPageControl.swift in Sources */,
-				DA1DF2A11FB0121500FA9122 /* SLTextPageControl.swift in Sources */,
+				DA1DF2B11FB0366C00FA9122 /* SLDotView.swift in Sources */,
+				DA1DF2B21FB0366C00FA9122 /* SLPageControl.swift in Sources */,
+				DA1DF2B31FB0366C00FA9122 /* SLTextPageControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
