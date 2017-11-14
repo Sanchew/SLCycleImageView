@@ -1,14 +1,14 @@
 import UIKit
 import Kingfisher
 
-let kCycleScrollViewInitialPageControlDotSize = CGSize(width: 10, height: 10)
-let ID: String = "cycleCell"
-@objc public enum SLCycleScrollViewPageContolAliment : Int {
+let kCycleImageViewInitialPageControlDotSize = CGSize(width: 10, height: 10)
+let ID: String = "SLCycleCell"
+@objc public enum SLCycleImageViewPageContolAliment : Int {
     case right
     case center
 }
 
-@objc public enum SLCycleScrollViewPageContolStyle : Int {
+@objc public enum SLCycleImageViewPageContolStyle : Int {
     case classic
     // 系统自带经典样式
     case animated
@@ -18,41 +18,41 @@ let ID: String = "cycleCell"
     case none
 }
 
-@objc public protocol SLCycleScrollViewDelegate : NSObjectProtocol {
+@objc public protocol SLCycleImageViewDelegate : NSObjectProtocol {
     /** 点击图片回调 */
-    @objc optional func cycleScrollView(_ cycleScrollView: SLCycleScrollView, didSelectItemAtIndex index: Int)
+    @objc optional func cycleImageView(_ cycleImageView: SLCycleImageView, didSelectItemAtIndex index: Int)
     /** 图片滚动回调 */
 
-    @objc optional func cycleScrollView(_ cycleScrollView: SLCycleScrollView, didScrollToIndex index: Int)
+    @objc optional func cycleImageView(_ cycleImageView: SLCycleImageView, didScrollToIndex index: Int)
 }
-open class SLCycleScrollView: UIView,UICollectionViewDelegate,UICollectionViewDataSource {
+open class SLCycleImageView: UIView,UICollectionViewDelegate,UICollectionViewDataSource {
     /** 初始轮播图（推荐使用） */
-    open class func cycleScrollViewWithFrame(_ frame: CGRect, delegate: SLCycleScrollViewDelegate, placeholderImage: UIImage) -> SLCycleScrollView {
-        let cycleScrollView = SLCycleScrollView(frame: frame)
-        cycleScrollView.delegate = delegate
-        cycleScrollView.placeholderImage = placeholderImage
-        return cycleScrollView
+    open class func cycleImageViewWithFrame(_ frame: CGRect, delegate: SLCycleImageViewDelegate, placeholderImage: UIImage) -> SLCycleImageView {
+        let cycleImageView = SLCycleImageView(frame: frame)
+        cycleImageView.delegate = delegate
+        cycleImageView.placeholderImage = placeholderImage
+        return cycleImageView
     }
 
-    open class func cycleScrollViewWithFrame(_ frame: CGRect, imageURLStringsGroup imageURLsGroup: [AnyObject]) -> SLCycleScrollView {
-        let cycleScrollView = SLCycleScrollView(frame: frame)
-        cycleScrollView.imageURLStringsGroup = [AnyObject](imageURLsGroup)
-        return cycleScrollView
+    open class func cycleImageViewWithFrame(_ frame: CGRect, imageURLStringsGroup imageURLsGroup: [AnyObject]) -> SLCycleImageView {
+        let cycleImageView = SLCycleImageView(frame: frame)
+        cycleImageView.imageURLStringsGroup = [AnyObject](imageURLsGroup)
+        return cycleImageView
     }
     /** 本地图片轮播初始化方式 */
 
-    open class func cycleScrollViewWithFrame(_ frame: CGRect, imageNamesGroup: [AnyObject]) -> SLCycleScrollView {
-        let cycleScrollView = SLCycleScrollView(frame: frame)
-        cycleScrollView.localizationImageNamesGroup = [AnyObject](imageNamesGroup)
-        return cycleScrollView
+    open class func cycleImageViewWithFrame(_ frame: CGRect, imageNamesGroup: [AnyObject]) -> SLCycleImageView {
+        let cycleImageView = SLCycleImageView(frame: frame)
+        cycleImageView.localizationImageNamesGroup = [AnyObject](imageNamesGroup)
+        return cycleImageView
     }
     /** 本地图片轮播初始化方式2,infiniteLoop:是否无限循环 */
 
-    open class func cycleScrollViewWithFrame(_ frame: CGRect, shouldInfiniteLoop infiniteLoop: Bool, imageNamesGroup: [AnyObject]) -> SLCycleScrollView {
-        let cycleScrollView = SLCycleScrollView(frame: frame)
-        cycleScrollView.infiniteLoop = infiniteLoop
-        cycleScrollView.localizationImageNamesGroup = [AnyObject](imageNamesGroup)
-        return cycleScrollView
+    open class func cycleImageViewWithFrame(_ frame: CGRect, shouldInfiniteLoop infiniteLoop: Bool, imageNamesGroup: [AnyObject]) -> SLCycleImageView {
+        let cycleImageView = SLCycleImageView(frame: frame)
+        cycleImageView.infiniteLoop = infiniteLoop
+        cycleImageView.localizationImageNamesGroup = [AnyObject](imageNamesGroup)
+        return cycleImageView
     }
     //////////////////////  数据源接口  //////////////////////
     /** 网络图片 url string 数组 */
@@ -119,7 +119,7 @@ open class SLCycleScrollView: UIView,UICollectionViewDelegate,UICollectionViewDa
         }
     }
 
-    open weak var delegate: SLCycleScrollViewDelegate?
+    open weak var delegate: SLCycleImageViewDelegate?
     /** block方式监听点击 */
     open var clickItemOperationBlock: ((Int)->Void)?
     /** block方式监听滚动 */
@@ -186,14 +186,14 @@ open class SLCycleScrollView: UIView,UICollectionViewDelegate,UICollectionViewDa
     /** 只展示文字轮播 */
     open var onlyDisplayText = false
     /** pagecontrol 样式，默认为动画样式 */
-    open var pageControlStyle: SLCycleScrollViewPageContolStyle = .classic {
+    open var pageControlStyle: SLCycleImageViewPageContolStyle = .classic {
         didSet {
             self.setupPageControl()
         }
     }
 
     /** 分页控件位置 */
-    open var pageControlAliment: SLCycleScrollViewPageContolAliment = .center
+    open var pageControlAliment: SLCycleImageViewPageContolAliment = .center
     /** 分页控件距离轮播图的底部间距（在默认间距基础上）的偏移量 */
     open var pageControlBottomOffset: CGFloat = 0
     /** 分页控件距离轮播图的右边间距（在默认间距基础上）的偏移量 */
@@ -265,7 +265,7 @@ open class SLCycleScrollView: UIView,UICollectionViewDelegate,UICollectionViewDa
     }
 
     open func clearCache() {
-        SLCycleScrollView.clearImagesCache()
+        SLCycleImageView.clearImagesCache()
     }
 
 
@@ -295,7 +295,7 @@ open class SLCycleScrollView: UIView,UICollectionViewDelegate,UICollectionViewDa
         self.autoScroll = true
         self.infiniteLoop = true
         self.showPageControl = true
-        self.pageControlDotSize = kCycleScrollViewInitialPageControlDotSize
+        self.pageControlDotSize = kCycleImageViewInitialPageControlDotSize
         self.pageControlBottomOffset = 0
         self.pageControlRightOffset = 0
         self.pageControlStyle = .classic
@@ -474,7 +474,7 @@ open class SLCycleScrollView: UIView,UICollectionViewDelegate,UICollectionViewDa
         var size: CGSize = CGSize.zero
         let imagePathsGroupCount = imagePathsGroup?.count ?? 0
         if let pageControl = pageControl as? SLPageControl {
-            if let _ = self.pageDotImage,let _ = self.currentPageDotImage , kCycleScrollViewInitialPageControlDotSize.equalTo(self.pageControlDotSize) {
+            if let _ = self.pageDotImage,let _ = self.currentPageDotImage , kCycleImageViewInitialPageControlDotSize.equalTo(self.pageControlDotSize) {
                 pageControl.dotSize = self.pageControlDotSize
             }
             size = pageControl.sizeForNumberOfPages(imagePathsGroupCount)
@@ -566,7 +566,7 @@ open class SLCycleScrollView: UIView,UICollectionViewDelegate,UICollectionViewDa
     }
 
     open func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let _ = self.delegate?.cycleScrollView?(self, didSelectItemAtIndex: self.pageControlIndexWithCurrentCellIndex((indexPath as NSIndexPath).item)) {
+        if let _ = self.delegate?.cycleImageView?(self, didSelectItemAtIndex: self.pageControlIndexWithCurrentCellIndex((indexPath as NSIndexPath).item)) {
             
         } else if let block = self.clickItemOperationBlock {
             block(self.pageControlIndexWithCurrentCellIndex((indexPath as NSIndexPath).item))
@@ -618,7 +618,7 @@ open class SLCycleScrollView: UIView,UICollectionViewDelegate,UICollectionViewDa
             // 解决清除timer时偶尔会出现的问题
         let itemIndex: Int = self.currentIndex()
         let indexOnPageControl: Int = self.pageControlIndexWithCurrentCellIndex(itemIndex)
-        if let _ = self.delegate?.cycleScrollView?(self, didScrollToIndex: indexOnPageControl) {
+        if let _ = self.delegate?.cycleImageView?(self, didScrollToIndex: indexOnPageControl) {
             
         } else if let block = self.itemDidScrollOperationBlock {
             block(indexOnPageControl)

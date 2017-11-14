@@ -14,7 +14,7 @@
 		DA1DF2B21FB0366C00FA9122 /* SLPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2AA1FB0366C00FA9122 /* SLPageControl.swift */; };
 		DA1DF2B31FB0366C00FA9122 /* SLTextPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2AB1FB0366C00FA9122 /* SLTextPageControl.swift */; };
 		DA1DF2B41FB0366C00FA9122 /* SLCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2AC1FB0366C00FA9122 /* SLCollectionViewCell.swift */; };
-		DA1DF2B51FB0366C00FA9122 /* SLCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2AD1FB0366C00FA9122 /* SLCycleScrollView.swift */; };
+		DA1DF2B51FB0366C00FA9122 /* SLCycleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2AD1FB0366C00FA9122 /* SLCycleImageView.swift */; };
 		DA1DF2B61FB0366C00FA9122 /* UIView+SLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2AE1FB0366C00FA9122 /* UIView+SLExtension.swift */; };
 		DADA4D661FAAB29300014539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA4D651FAAB29300014539 /* AppDelegate.swift */; };
 		DADA4D681FAAB29300014539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA4D671FAAB29300014539 /* ViewController.swift */; };
@@ -32,7 +32,7 @@
 		DA1DF2AA1FB0366C00FA9122 /* SLPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLPageControl.swift; sourceTree = "<group>"; };
 		DA1DF2AB1FB0366C00FA9122 /* SLTextPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLTextPageControl.swift; sourceTree = "<group>"; };
 		DA1DF2AC1FB0366C00FA9122 /* SLCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLCollectionViewCell.swift; sourceTree = "<group>"; };
-		DA1DF2AD1FB0366C00FA9122 /* SLCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLCycleScrollView.swift; sourceTree = "<group>"; };
+		DA1DF2AD1FB0366C00FA9122 /* SLCycleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLCycleImageView.swift; sourceTree = "<group>"; };
 		DA1DF2AE1FB0366C00FA9122 /* UIView+SLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SLExtension.swift"; sourceTree = "<group>"; };
 		DADA4D621FAAB29300014539 /* SLCycleImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLCycleImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADA4D651FAAB29300014539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 			children = (
 				DA1DF2A61FB0366C00FA9122 /* PageControl */,
 				DA1DF2AC1FB0366C00FA9122 /* SLCollectionViewCell.swift */,
-				DA1DF2AD1FB0366C00FA9122 /* SLCycleScrollView.swift */,
+				DA1DF2AD1FB0366C00FA9122 /* SLCycleImageView.swift */,
 				DA1DF2AE1FB0366C00FA9122 /* UIView+SLExtension.swift */,
 			);
 			path = SLCycleImageView;
@@ -271,7 +271,7 @@
 				DADA4D681FAAB29300014539 /* ViewController.swift in Sources */,
 				DA1DF2B01FB0366C00FA9122 /* SLAnimatedDotView.swift in Sources */,
 				DA1DF2B61FB0366C00FA9122 /* UIView+SLExtension.swift in Sources */,
-				DA1DF2B51FB0366C00FA9122 /* SLCycleScrollView.swift in Sources */,
+				DA1DF2B51FB0366C00FA9122 /* SLCycleImageView.swift in Sources */,
 				DA1DF2B41FB0366C00FA9122 /* SLCollectionViewCell.swift in Sources */,
 				DADA4D661FAAB29300014539 /* AppDelegate.swift in Sources */,
 				DA1DF2B11FB0366C00FA9122 /* SLDotView.swift in Sources */,
