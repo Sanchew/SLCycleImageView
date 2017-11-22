@@ -34,51 +34,51 @@ open class SLCycleImageView: UIView,UICollectionViewDelegate,UICollectionViewDat
         return cycleImageView
     }
 
-    open class func cycleImageViewWithFrame(_ frame: CGRect, imageURLStringsGroup imageURLsGroup: [AnyObject]) -> SLCycleImageView {
+    open class func cycleImageViewWithFrame(_ frame: CGRect, imageURLStringsGroup imageURLsGroup: [Any]) -> SLCycleImageView {
         let cycleImageView = SLCycleImageView(frame: frame)
-        cycleImageView.imageURLStringsGroup = [AnyObject](imageURLsGroup)
+        cycleImageView.imageURLStringsGroup = imageURLsGroup
         return cycleImageView
     }
     /** 本地图片轮播初始化方式 */
 
-    open class func cycleImageViewWithFrame(_ frame: CGRect, imageNamesGroup: [AnyObject]) -> SLCycleImageView {
+    open class func cycleImageViewWithFrame(_ frame: CGRect, imageNamesGroup: [Any]) -> SLCycleImageView {
         let cycleImageView = SLCycleImageView(frame: frame)
-        cycleImageView.localizationImageNamesGroup = [AnyObject](imageNamesGroup)
+        cycleImageView.localizationImageNamesGroup = imageNamesGroup
         return cycleImageView
     }
     /** 本地图片轮播初始化方式2,infiniteLoop:是否无限循环 */
 
-    open class func cycleImageViewWithFrame(_ frame: CGRect, shouldInfiniteLoop infiniteLoop: Bool, imageNamesGroup: [AnyObject]) -> SLCycleImageView {
+    open class func cycleImageViewWithFrame(_ frame: CGRect, shouldInfiniteLoop infiniteLoop: Bool, imageNamesGroup: [Any]) -> SLCycleImageView {
         let cycleImageView = SLCycleImageView(frame: frame)
         cycleImageView.infiniteLoop = infiniteLoop
-        cycleImageView.localizationImageNamesGroup = [AnyObject](imageNamesGroup)
+        cycleImageView.localizationImageNamesGroup = imageNamesGroup
         return cycleImageView
     }
     //////////////////////  数据源接口  //////////////////////
     /** 网络图片 url string 数组 */
-    open var imageURLStringsGroup: [AnyObject]? {
+    open var imageURLStringsGroup: [Any]? {
         didSet {
             if let imageURLStringsGroup = imageURLStringsGroup {
                 self.imagePathsGroup = imageURLStringsGroup.map {
                     $0 is String ? $0 as! String : ($0 as! URL).absoluteString
-                }.filter { !$0.isEmpty }.map{ $0 as AnyObject }
+                }.filter { !$0.isEmpty }.map{ $0 }
             }
         }
     }
 
     /** 每张图片对应要显示的文字数组 */
-    open var titlesGroup: [AnyObject]? {
+    open var titlesGroup: [String]? {
         didSet {
             
             if let titlesGroup = titlesGroup , self.onlyDisplayText {
                 self.backgroundColor = UIColor.clear
-                self.imageURLStringsGroup = [String](repeating: "",count: titlesGroup.count) as [AnyObject]
+                self.imageURLStringsGroup = [String](repeating: "",count: titlesGroup.count)
             }
         }
     }
 
     /** 本地图片数组 */
-    open var localizationImageNamesGroup: [AnyObject]? {
+    open var localizationImageNamesGroup: [Any]? {
         didSet {
             self.imagePathsGroup = localizationImageNamesGroup
         }
@@ -129,7 +129,7 @@ open class SLCycleImageView: UIView,UICollectionViewDelegate,UICollectionViewDat
     open weak var mainView: UICollectionView!
     // 显示图片的collectionView
     open weak var flowLayout: UICollectionViewFlowLayout!
-    open var imagePathsGroup: [AnyObject]? {
+    open var imagePathsGroup: [Any]? {
         didSet {
             self.invalidateTimer()
             if let imagePathsGroup = imagePathsGroup {
@@ -550,7 +550,7 @@ open class SLCycleImageView: UIView,UICollectionViewDelegate,UICollectionViewDat
         }
 
         if let titlesGroup = titlesGroup , titlesGroup.count > 0 && itemIndex < titlesGroup.count {
-            cell.title = titlesGroup[itemIndex] as! String
+            cell.title = titlesGroup[itemIndex]
         }
         if !cell.hasConfigured {
             cell.titleLabelBackgroundColor = self.titleLabelBackgroundColor

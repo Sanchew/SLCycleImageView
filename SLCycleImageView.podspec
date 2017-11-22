@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SLCycleImageView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "图片轮播,SLCycleImageView,ScrollView,ScrollImage,Cycle,Scroll"
   
   s.description  = <<-DESC
