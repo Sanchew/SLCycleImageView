@@ -278,11 +278,11 @@ open class SLCycleImageView: UIView,UICollectionViewDelegate,UICollectionViewDat
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.initialization()
+        self.setupMainView()
     }
 
     override open func awakeFromNib() {
-        self.initialization()
-        self.setupMainView()
     }
 
     func initialization() {
