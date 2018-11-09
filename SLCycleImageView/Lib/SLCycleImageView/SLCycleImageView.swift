@@ -113,7 +113,7 @@ open class SLCycleImageView: UIView,UICollectionViewDelegate,UICollectionViewDat
     }
 
     /** 图片滚动方向，默认为水平滚动 */
-    open var scrollDirection: UICollectionViewScrollDirection = .horizontal {
+    open var scrollDirection: UICollectionView.ScrollDirection = .horizontal {
         didSet {
             self.flowLayout.scrollDirection = scrollDirection
         }
@@ -155,12 +155,12 @@ open class SLCycleImageView: UIView,UICollectionViewDelegate,UICollectionViewDat
     func adjustWhenControllerViewWillAppera() {
         let targetIndex: Int = self.currentIndex()
         if targetIndex < totalItemsCount {
-            mainView.scrollToItem(at: IndexPath(item: targetIndex, section: 0), at: UICollectionViewScrollPosition(), animated: false)
+            mainView.scrollToItem(at: IndexPath(item: targetIndex, section: 0), at: UICollectionView.ScrollPosition(), animated: false)
         }
     }
     //////////////////////  自定义样式接口  //////////////////////
     /** 轮播图片的ContentMode，默认为 UIViewContentModeScaleToFill */
-    open var bannerImageViewContentMode: UIViewContentMode = .scaleToFill
+    open var bannerImageViewContentMode: UIView.ContentMode = .scaleToFill
     /** 占位图，用于网络未加载到图片时 */
     open var placeholderImage: UIImage? {
         didSet {
@@ -348,7 +348,7 @@ open class SLCycleImageView: UIView,UICollectionViewDelegate,UICollectionViewDat
     func setupTimer() {
         let timer: Timer = Timer.scheduledTimer(timeInterval: self.autoScrollTimeInterval, target: self, selector: #selector(self.automaticScroll), userInfo: nil, repeats: true)
         self.timer = timer
-        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
+        RunLoop.main.add(timer, forMode: RunLoop.Mode.common)
     }
 
     func invalidateTimer() {
@@ -426,11 +426,11 @@ open class SLCycleImageView: UIView,UICollectionViewDelegate,UICollectionViewDat
         if targetIndex >= totalItemsCount {
             if self.infiniteLoop {
                 targetIndex = Int(Double(totalItemsCount) * 0.5)
-                mainView.scrollToItem(at: IndexPath(item: targetIndex, section: 0), at: UICollectionViewScrollPosition(), animated: false)
+                mainView.scrollToItem(at: IndexPath(item: targetIndex, section: 0), at: UICollectionView.ScrollPosition(), animated: false)
             }
             return
         }
-        mainView.scrollToItem(at: IndexPath(item: targetIndex, section: 0), at: UICollectionViewScrollPosition(), animated: true)
+        mainView.scrollToItem(at: IndexPath(item: targetIndex, section: 0), at: UICollectionView.ScrollPosition(), animated: true)
     }
 
     func currentIndex() -> Int {
@@ -469,7 +469,7 @@ open class SLCycleImageView: UIView,UICollectionViewDelegate,UICollectionViewDat
             else {
                 targetIndex = 0
             }
-            mainView.scrollToItem(at: IndexPath(item: targetIndex, section: 0), at: UICollectionViewScrollPosition(), animated: false)
+            mainView.scrollToItem(at: IndexPath(item: targetIndex, section: 0), at: UICollectionView.ScrollPosition(), animated: false)
         }
         var size: CGSize = CGSize.zero
         let imagePathsGroupCount = imagePathsGroup?.count ?? 0

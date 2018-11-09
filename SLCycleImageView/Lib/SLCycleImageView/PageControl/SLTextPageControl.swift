@@ -17,7 +17,7 @@ class SLTextPageControl: UIControl {
     var currentPage: Int = 0 {
         didSet {
             self.textPage.textAlignment = numberOfPages > 9 ? .right : .center
-            let info: NSMutableAttributedString = NSMutableAttributedString(string: String(format: "%-2ld", Int(currentPage) + 1), attributes: [NSAttributedStringKey.font: UIFont(name: "Helvetica-Bold", size: 10)!])
+            let info: NSMutableAttributedString = NSMutableAttributedString(string: String(format: "%-2ld", Int(currentPage) + 1), attributes: [NSAttributedString.Key.font: UIFont(name: "Helvetica-Bold", size: 10)!])
 //            info.appendAttributedString(String("/\(Int(numberOfPages))"))
             info.append(NSAttributedString(string: "/\(numberOfPages)"))
             self.textPage.attributedText = info

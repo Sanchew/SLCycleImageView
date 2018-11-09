@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SLCycleImageView"
-  s.version      = "1.0.2"
+  s.version      = "1.1.0"
   s.summary      = "图片轮播,SLCycleImageView,ScrollView,ScrollImage,Cycle,Scroll"
   
   s.description  = <<-DESC
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.dependency 'Kingfisher', '~> 4.2'
   s.dependency 'DACircularProgress', '~> 2.3'
   
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
  
   s.frameworks   = "UIKit"
 
