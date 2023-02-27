@@ -72,21 +72,27 @@ class SLCollectionMediaViewCell: UICollectionViewCell {
         playerView.isUserInteractionEnabled = false
         self.contentView.addSubview(playerView)
         let playButton = UIButton()
-        playButton.tag = BMPlayerControlView.ButtonType.replay.rawValue
+        playButton.tag = BMPlayerControlView.ButtonType.play.rawValue
         self.playerButton = playButton
 //        playButton.backgroundColor = .red
         playButton.setImage(UIImage(named: "player"), for: .normal)
         self.contentView.addSubview(playButton)
-        playButton.isHidden = true
+//        playButton.isHidden = true
         self.playerView.isPlayingStateChanged = {[unowned self] isPlaying in
-            self.playerButton.isHidden = isPlaying
+            DispatchQueue.main.async {
+                self.playerButton.imageView?.isHidden = isPlaying
+            }
         }
         playButton.frame = CGRect(x: 0, y: 0, width: 67, height: 67)
         playButton.addTarget(self, action: #selector(SLCollectionMediaViewCell.play), for: .touchUpInside)
     }
     
     @objc func play() {
-        playerView.controlView(controlView: self.controlView, didPressButton: self.playerButton)
+        if playerView.isPlaying {
+            playerView.pause()
+        } else {
+            playerView.controlView(controlView: self.controlView, didPressButton: self.playerButton)
+        }
     }
 
     func setupTitleLabel() {
@@ -125,4 +131,5 @@ class SLCollectionMediaViewCell: UICollectionViewCell {
             self.titleLabel.frame = CGRect(x: titleLabelX, y: titleLabelY, width: titleLabelW, height: titleLabelH)
         }
     }
+    
 }
