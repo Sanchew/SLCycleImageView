@@ -16,6 +16,7 @@
 		DA1DF2B41FB0366C00FA9122 /* SLCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2AC1FB0366C00FA9122 /* SLCollectionViewCell.swift */; };
 		DA1DF2B51FB0366C00FA9122 /* SLCycleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2AD1FB0366C00FA9122 /* SLCycleImageView.swift */; };
 		DA1DF2B61FB0366C00FA9122 /* UIView+SLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DF2AE1FB0366C00FA9122 /* UIView+SLExtension.swift */; };
+		DA99493B29A88C86009AEAB5 /* SLCollectionMediaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA99493A29A88C86009AEAB5 /* SLCollectionMediaViewCell.swift */; };
 		DADA4D661FAAB29300014539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA4D651FAAB29300014539 /* AppDelegate.swift */; };
 		DADA4D681FAAB29300014539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA4D671FAAB29300014539 /* ViewController.swift */; };
 		DADA4D6B1FAAB29300014539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADA4D691FAAB29300014539 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		DA1DF2AC1FB0366C00FA9122 /* SLCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLCollectionViewCell.swift; sourceTree = "<group>"; };
 		DA1DF2AD1FB0366C00FA9122 /* SLCycleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLCycleImageView.swift; sourceTree = "<group>"; };
 		DA1DF2AE1FB0366C00FA9122 /* UIView+SLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SLExtension.swift"; sourceTree = "<group>"; };
+		DA99493A29A88C86009AEAB5 /* SLCollectionMediaViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SLCollectionMediaViewCell.swift; path = SLCycleImageView/Lib/SLCycleImageView/SLCollectionMediaViewCell.swift; sourceTree = SOURCE_ROOT; };
 		DADA4D621FAAB29300014539 /* SLCycleImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLCycleImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADA4D651FAAB29300014539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DADA4D671FAAB29300014539 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				DA1DF2A61FB0366C00FA9122 /* PageControl */,
 				DA1DF2AC1FB0366C00FA9122 /* SLCollectionViewCell.swift */,
+				DA99493A29A88C86009AEAB5 /* SLCollectionMediaViewCell.swift */,
 				DA1DF2AD1FB0366C00FA9122 /* SLCycleImageView.swift */,
 				DA1DF2AE1FB0366C00FA9122 /* UIView+SLExtension.swift */,
 			);
@@ -148,7 +151,6 @@
 				DADA4D5F1FAAB29300014539 /* Frameworks */,
 				DADA4D601FAAB29300014539 /* Resources */,
 				7DBB0A3DA2D6844177D8D433 /* [CP] Embed Pods Frameworks */,
-				BF9994B869DC18CF23AD9140 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,33 +234,24 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SLCycleImageView/Pods-SLCycleImageView-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SLCycleImageView/Pods-SLCycleImageView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BMPlayer/BMPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLCycleImageView/Pods-SLCycleImageView-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BF9994B869DC18CF23AD9140 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLCycleImageView/Pods-SLCycleImageView-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SLCycleImageView/Pods-SLCycleImageView-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -272,6 +265,7 @@
 				DADA4D681FAAB29300014539 /* ViewController.swift in Sources */,
 				DA1DF2B01FB0366C00FA9122 /* SLAnimatedDotView.swift in Sources */,
 				DA1DF2B61FB0366C00FA9122 /* UIView+SLExtension.swift in Sources */,
+				DA99493B29A88C86009AEAB5 /* SLCollectionMediaViewCell.swift in Sources */,
 				DA1DF2B51FB0366C00FA9122 /* SLCycleImageView.swift in Sources */,
 				DA1DF2B41FB0366C00FA9122 /* SLCollectionViewCell.swift in Sources */,
 				DADA4D661FAAB29300014539 /* AppDelegate.swift in Sources */,

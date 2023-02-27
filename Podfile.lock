@@ -1,15 +1,38 @@
 PODS:
+  - BMPlayer (1.3.2):
+    - BMPlayer/Full (= 1.3.2)
+  - BMPlayer/Core (1.3.2)
+  - BMPlayer/Full (1.3.2):
+    - BMPlayer/Core
+    - NVActivityIndicatorView (~> 4.7.0)
+    - SnapKit (~> 5.0.0)
   - DACircularProgress (2.3.1)
   - Kingfisher (4.10.1)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
+  - BMPlayer (~> 1.3.0)
   - DACircularProgress
   - Kingfisher
 
+SPEC REPOS:
+  trunk:
+    - BMPlayer
+    - DACircularProgress
+    - Kingfisher
+    - NVActivityIndicatorView
+    - SnapKit
+
 SPEC CHECKSUMS:
+  BMPlayer: e4b241bd088644d7b89d991a1a65d1b1615d19b3
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 92fc8a0de2090edd3d2a7084acea0568dded1a1c
+PODFILE CHECKSUM: bbb87f920d6f3addb439899de4b4ed0b6733eca5
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.11.3

@@ -3,6 +3,7 @@ import Kingfisher
 
 let kCycleImageViewInitialPageControlDotSize = CGSize(width: 10, height: 10)
 let ID: String = "SLCycleCell"
+let VID: String = "SLVideoCycleCell"
 @objc public enum SLCycleImageViewPageContolAliment : Int {
     case right
     case center
@@ -318,6 +319,7 @@ open class SLCycleImageView: UIView,UICollectionViewDelegate,UICollectionViewDat
         mainView.showsHorizontalScrollIndicator = false
         mainView.showsVerticalScrollIndicator = false
         mainView.register(SLCollectionViewCell.self, forCellWithReuseIdentifier: ID)
+        mainView.register(SLCollectionMediaViewCell.self, forCellWithReuseIdentifier: VID)
         mainView.dataSource = self
         mainView.delegate = self
         mainView.scrollsToTop = false
@@ -528,9 +530,16 @@ open class SLCycleImageView: UIView,UICollectionViewDelegate,UICollectionViewDat
     }
 
     open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ID, for: indexPath) as! SLCollectionViewCell
         let itemIndex: Int = self.pageControlIndexWithCurrentCellIndex((indexPath as NSIndexPath).item)
         let imagePath = self.imagePathsGroup?[itemIndex]
+        if let imagePath = imagePath as? String, imagePath.contains(".mp4") {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VID, for: indexPath) as! SLCollectionMediaViewCell
+            let nextImagePath = self.imagePathsGroup?[itemIndex + 1] as? String
+            cell.titleLabelHeight = self.titleLabelHeight
+            cell.loadImage(url: URL(string: imagePath)!, placeholderImage: nextImagePath == nil ? nil : URL(string: nextImagePath!)!, title: titlesGroup?[itemIndex] ?? "")
+            return cell
+        }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ID, for: indexPath) as! SLCollectionViewCell
         if let imagePath = imagePath as? String , !self.onlyDisplayText {
             if imagePath.hasPrefix("http") {
                 //cell.imageView!.kf_setImageWithURL(URL(string: imagePath)!, placeholderImage: self.placeholderImage)

@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '8.0'
+platform :ios, '10.0'
 inhibit_all_warnings!
 
 target 'SLCycleImageView' do
@@ -9,5 +9,6 @@ target 'SLCycleImageView' do
   # Pods for SLCycleImageView
   pod 'Kingfisher'
   pod 'DACircularProgress'
+  pod 'BMPlayer', '~> 1.3.0'
 
 end

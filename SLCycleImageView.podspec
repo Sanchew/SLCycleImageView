@@ -19,6 +19,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/sanchew/SLCycleImageView.git", :tag => s.version}
   
   s.source_files = "SLCycleImageView/Lib/SLCycleImageView/**/*.swift"
+
+  s.resources = "SLCycleImageView/Assets.xcassets"
   
   s.requires_arc = true
   
